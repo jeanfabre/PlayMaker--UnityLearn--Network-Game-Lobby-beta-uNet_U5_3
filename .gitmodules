@@ -1,3 +1,6 @@
 [submodule "Assets/PlayMaker Standard Assets Network"]
 	path = Assets/PlayMaker Standard Assets Network
 	url = https://jeanfabre@github.com/jeanfabre/PlayMaker--Standard--Assets--Network.git
+[submodule "Assets/PlayMaker Utils"]
+	path = Assets/PlayMaker Utils
+	url = https://jeanfabre@github.com/jeanfabre/PlayMaker--Utils.git
