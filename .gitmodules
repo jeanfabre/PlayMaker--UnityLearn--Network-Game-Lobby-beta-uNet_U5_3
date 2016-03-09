@@ -4,3 +4,6 @@
 [submodule "Assets/PlayMaker Utils"]
 	path = Assets/PlayMaker Utils
 	url = https://jeanfabre@github.com/jeanfabre/PlayMaker--Utils.git
+[submodule "Assets/PlayMaker Unet"]
+	path = Assets/PlayMaker Unet
+	url = https://jeanfabre@github.com/jeanfabre/PlayMaker--Unet-SubModule-.git
