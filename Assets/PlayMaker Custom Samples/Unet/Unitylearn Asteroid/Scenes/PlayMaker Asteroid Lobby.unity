@@ -183,7 +183,7 @@ Prefab:
     - target: {fileID: 11475086, guid: b2e94d7587c4242f8b39fe03056b6c14, type: 2}
       propertyPath: m_GamePlayerPrefab
       value: 
-      objectReference: {fileID: 111598, guid: e1ae9de1b8dd57e41918d7f8b76a310d, type: 2}
+      objectReference: {fileID: 111598, guid: 2da1311fb258e4a03912aaa8cde90a0e, type: 2}
     - target: {fileID: 11475086, guid: b2e94d7587c4242f8b39fe03056b6c14, type: 2}
       propertyPath: m_PlayScene
       value: PlayMaker Asteroid Game
@@ -195,6 +195,10 @@ Prefab:
     - target: {fileID: 11475086, guid: b2e94d7587c4242f8b39fe03056b6c14, type: 2}
       propertyPath: m_LobbyScene
       value: PlayMaker Asteroid Lobby
+      objectReference: {fileID: 0}
+    - target: {fileID: 11475086, guid: b2e94d7587c4242f8b39fe03056b6c14, type: 2}
+      propertyPath: m_MinPlayers
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b2e94d7587c4242f8b39fe03056b6c14, type: 2}
