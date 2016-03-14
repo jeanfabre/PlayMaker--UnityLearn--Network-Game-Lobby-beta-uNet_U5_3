@@ -30,7 +30,7 @@ public class NetworkGameManager : NetworkBehaviour
     {
         if (isServer)
         {
-            StartCoroutine(AsteroidCoroutine());
+           // StartCoroutine(AsteroidCoroutine());
         }
 
         for(int i = 0; i < sShips.Count; ++i)

@@ -362,7 +362,7 @@ MonoBehaviour:
         paramName: []
         paramDataPos: 
         paramByteDataSize: 
-    - name: get the player Name and Color
+    - name: get the local player Go, Name and Color
       description: 
       colorIndex: 0
       position:
@@ -393,9 +393,9 @@ MonoBehaviour:
           networkSync: 0
           value: {fileID: 0}
         - useVariable: 1
-          name: 
+          name: Local Player
           tooltip: 
-          showInInspector: 0
+          showInInspector: 1
           networkSync: 0
           value: {fileID: 0}
         fsmOwnerDefaultParams: []
@@ -538,7 +538,7 @@ MonoBehaviour:
         name: UNET/ SAN / ON LOBBY SERVER SCENE LOADED FOR PLAYER
         isSystemEvent: 0
         isGlobal: 1
-      toState: get the player Name and Color
+      toState: get the local player Go, Name and Color
       linkStyle: 0
       linkConstraint: 0
       colorIndex: 0
@@ -564,7 +564,13 @@ MonoBehaviour:
         value: {r: 0, g: 0, b: 0, a: 1}
       rectVariables: []
       quaternionVariables: []
-      gameObjectVariables: []
+      gameObjectVariables:
+      - useVariable: 1
+        name: Local Player
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: {fileID: 0}
       objectVariables: []
       materialVariables: []
       textureVariables: []
@@ -572,7 +578,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 0000000000000000
+      variableCategoryIDs: 000000000000000000000000
     description: 'This Fsm gets the local player color and name when joining a game
 
 
