@@ -169,6 +169,7 @@ GameObject:
   - 4: {fileID: 774524926}
   - 114: {fileID: 774524927}
   - 114: {fileID: 774524925}
+  - 114: {fileID: 774524928}
   m_Layer: 0
   m_Name: PlayMaker Game Manager
   m_TagString: Untagged
@@ -245,299 +246,6 @@ MonoBehaviour:
         paramName: []
         paramDataPos: 
         paramByteDataSize: 
-    - name: get the name and color of the local player
-      description: 
-      colorIndex: 0
-      position:
-        serializedVersion: 2
-        x: 208
-        y: 112
-        width: 396
-        height: 32
-      isBreakpoint: 0
-      isSequence: 0
-      hideUnused: 0
-      transitions:
-      - fsmEvent:
-          name: FINISHED
-          isSystemEvent: 1
-          isGlobal: 0
-        toState: force synched values on local player
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
-      actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.GetEventInfo
-        customNames:
-        - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: d9ade603
-        unityObjectParams: []
-        fsmGameObjectParams:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {fileID: 0}
-        - useVariable: 1
-          name: Local Player
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {fileID: 0}
-        fsmOwnerDefaultParams: []
-        animationCurveParams: []
-        functionCallParams: []
-        fsmTemplateControlParams: []
-        fsmEventTargetParams: []
-        fsmPropertyParams: []
-        layoutOptionParams: []
-        fsmStringParams:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 
-        - useVariable: 1
-          name: Local Player Name
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 
-        fsmObjectParams:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          typeName: 
-          value: {fileID: 0}
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          typeName: 
-          value: {fileID: 0}
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          typeName: 
-          value: {fileID: 0}
-        fsmVarParams: []
-        fsmArrayParams: []
-        fsmEnumParams: []
-        fsmFloatParams:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        fsmIntParams:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        fsmBoolParams:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        fsmVector2Params:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {x: 0, y: 0}
-        fsmVector3Params:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {x: 0, y: 0, z: 0}
-        fsmColorParams:
-        - useVariable: 1
-          name: Local Player Color
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {r: 0, g: 0, b: 0, a: 1}
-        fsmRectParams:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value:
-            serializedVersion: 2
-            x: 0
-            y: 0
-            width: 0
-            height: 0
-        fsmQuaternionParams:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {x: 0, y: 0, z: 0, w: 0}
-        stringParams: []
-        byteData: 
-        arrayParamSizes: 
-        arrayParamTypes: []
-        customTypeSizes: 
-        customTypeNames: []
-        paramDataType: 130000001200000011000000100000000f000000250000001c00000012000000130000001e0000002300000020000000210000001900000018000000
-        paramName:
-        - sentByGameObject
-        - fsmName
-        - getBoolData
-        - getIntData
-        - getFloatData
-        - getVector2Data
-        - getVector3Data
-        - getStringData
-        - getGameObjectData
-        - getRectData
-        - getQuaternionData
-        - getMaterialData
-        - getTextureData
-        - getColorData
-        - getObjectData
-        paramDataPos: 000000000000000000000000000000000000000000000000000000000100000001000000000000000000000000000000010000000000000002000000
-        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-    - name: force synched values on local player
-      description: 
-      colorIndex: 0
-      position:
-        serializedVersion: 2
-        x: 659
-        y: 118
-        width: 245
-        height: 16
-      isBreakpoint: 0
-      isSequence: 0
-      hideUnused: 0
-      transitions: []
-      actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.SetFsmString
-        - HutongGames.PlayMaker.Actions.SetFsmColor
-        customNames:
-        - 
-        - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000005000000
-        actionHashCodes: 52221a02d2122203
-        unityObjectParams: []
-        fsmGameObjectParams: []
-        fsmOwnerDefaultParams:
-        - ownerOption: 1
-          gameObject:
-            useVariable: 1
-            name: Local Player
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
-        - ownerOption: 1
-          gameObject:
-            useVariable: 1
-            name: Local Player
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
-        animationCurveParams: []
-        functionCallParams: []
-        fsmTemplateControlParams: []
-        fsmEventTargetParams: []
-        fsmPropertyParams: []
-        layoutOptionParams: []
-        fsmStringParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: Player Network Data
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: Name [synched]
-        - useVariable: 1
-          name: Local Player Name
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: Player Network Data
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: Color [synched]
-        fsmObjectParams: []
-        fsmVarParams: []
-        fsmArrayParams: []
-        fsmEnumParams: []
-        fsmFloatParams: []
-        fsmIntParams: []
-        fsmBoolParams: []
-        fsmVector2Params: []
-        fsmVector3Params: []
-        fsmColorParams:
-        - useVariable: 1
-          name: Local Player Color
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {r: 0, g: 0, b: 0, a: 1}
-        fsmRectParams: []
-        fsmQuaternionParams: []
-        stringParams: []
-        byteData: 0000
-        arrayParamSizes: 
-        arrayParamTypes: []
-        customTypeSizes: 
-        customTypeNames: []
-        paramDataType: 14000000120000001200000012000000010000001400000012000000120000001900000001000000
-        paramName:
-        - gameObject
-        - fsmName
-        - variableName
-        - setValue
-        - everyFrame
-        - gameObject
-        - fsmName
-        - variableName
-        - setValue
-        - everyFrame
-        paramDataPos: 00000000000000000100000002000000000000000100000003000000040000000000000001000000
-        paramByteDataSize: 00000000000000000000000000000000010000000000000000000000000000000000000001000000
     - name: wait for 3 seconds
       description: 
       colorIndex: 0
@@ -677,18 +385,7 @@ MonoBehaviour:
     - name: GAME / SHIP / INIT
       isSystemEvent: 0
       isGlobal: 1
-    - name: UNET/ SAN / ON LOBBY SERVER SCENE LOADED FOR PLAYER
-      isSystemEvent: 0
-      isGlobal: 1
     globalTransitions:
-    - fsmEvent:
-        name: UNET/ SAN / ON LOBBY SERVER SCENE LOADED FOR PLAYER
-        isSystemEvent: 0
-        isGlobal: 1
-      toState: get the name and color of the local player
-      linkStyle: 0
-      linkConstraint: 0
-      colorIndex: 0
     - fsmEvent:
         name: GAME / RETURN TO LOBBY
         isSystemEvent: 0
@@ -748,15 +445,24 @@ MonoBehaviour:
     EnableBreakpoints: 1
     activeStateName: 
     mouseEvents: 0
+    handleTriggerEnter2D: 0
+    handleTriggerExit2D: 0
+    handleTriggerStay2D: 0
+    handleCollisionEnter2D: 0
+    handleCollisionExit2D: 0
+    handleCollisionStay2D: 0
     handleTriggerEnter: 0
     handleTriggerExit: 0
     handleTriggerStay: 0
     handleCollisionEnter: 0
     handleCollisionExit: 0
     handleCollisionStay: 0
+    handleControllerColliderHit: 0
     handleOnGUI: 0
     handleFixedUpdate: 0
     handleApplicationEvents: 0
+    handleAnimatorMove: 0
+    handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
 --- !u!4 &774524926
@@ -803,6 +509,27 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
+--- !u!114 &774524928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 774524924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8b11c97b18f4456385d94f9d062a37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debug: 1
+  m_NumRoundsToWin: 5
+  m_StartDelay: 3
+  m_EndDelay: 3
+  m_MessageText: {fileID: 0}
+  m_PlayerPrefab: {fileID: 0}
+  m_SpawnPoint: []
+  m_GameIsFinished: 0
+  m_FadingScreen: {fileID: 0}
+  m_EndRoundScreen: {fileID: 0}
 --- !u!1 &868348012
 GameObject:
   m_ObjectHideFlags: 0
