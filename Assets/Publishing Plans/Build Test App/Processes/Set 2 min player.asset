@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70430378de03a482cb8efd0d71c7eadd, type: 3}
+  m_Name: Set 2 min player
+  m_EditorClassIdentifier: 
+  CreatedWithActionVersion: 1.3
+  gameObject:
+    useExpression: 0
+    expression: 
+    propertyValue: {fileID: 155310, guid: b2e94d7587c4242f8b39fe03056b6c14, type: 2}
+  property:
+    useExpression: 0
+    expression: 
+    info:
+      typeName: UnityEngine.Networking.NetworkLobbyManager
+      fieldPath: minPlayers
+  stringPropertyValue:
+    useExpression: 0
+    expression: 
+    propertyValue: 
+  boolPropertyValue:
+    useExpression: 0
+    expression: 
+    propertyValue: 0
+  intPropertyValue:
+    useExpression: 0
+    expression: 
+    propertyValue: 2
+  floatPropertyValue:
+    useExpression: 0
+    expression: 
+    propertyValue: 0
+  texturePropertyValue:
+    useExpression: 0
+    expression: 
+    propertyValue: {fileID: 0}
+  vector3PropertyValue:
+    useExpression: 0
+    expression: 
+    val: {x: 0, y: 0, z: 0}
+  vector2PropertyValue:
+    useExpression: 0
+    expression: 
+    val: {x: 0, y: 0}
+  rectPropertyValue:
+    useExpression: 0
+    expression: 
+    val:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+  gameObjectPropertyValue:
+    useExpression: 0
+    expression: 
+    propertyValue: {fileID: 0}
+  unityObjectPropertyValue:
+    useExpression: 0
+    expression: 
+    propertyValue: {fileID: 0}
+  quaternionPropertyValue:
+    useExpression: 0
+    expression: 
+    val: {x: 0, y: 0, z: 0, w: 0}
+  materialPropertyValue:
+    useExpression: 0
+    expression: 
+    propertyValue: {fileID: 0}
+  colorPropertyValue:
+    useExpression: 0
+    expression: 
+    propertyValue: {r: 0, g: 0, b: 1, a: 1}
+  objectPropertyValue:
+    useExpression: 1
+    expression: 
