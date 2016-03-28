@@ -196,6 +196,10 @@ Prefab:
       propertyPath: eventHandlerComponentsAdded
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11437398, guid: b2e94d7587c4242f8b39fe03056b6c14, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmEventTargetParams.Array.data[0].gameObject.gameObject.value
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b2e94d7587c4242f8b39fe03056b6c14, type: 2}
   m_IsPrefabParent: 0
