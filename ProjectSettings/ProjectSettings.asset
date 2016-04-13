@@ -9,8 +9,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: 2013_10 - Sample Assets
+  companyName: HutongGames
+  productName: PlayMaker Unity Networking
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_ShowUnitySplashScreen: 1
@@ -343,8 +343,8 @@ PlayerSettings:
   psmSplashimage: {fileID: 0}
   spritePackerPolicy: 
   scriptingDefineSymbols:
-    1: CROSS_PLATFORM_INPUT;PLAYMAKER;PLAYMAKER_1_8
-    2: CROSS_PLATFORM_INPUT;PLAYMAKER;PLAYMAKER_1_8
+    1: PLAYMAKER;PLAYMAKER_1_8
+    2: PLAYMAKER;PLAYMAKER_1_8
     4: CROSS_PLATFORM_INPUT;MOBILE_INPUT;PLAYMAKER;PLAYMAKER_1_8
     5: PLAYMAKER;PLAYMAKER_1_8
     6: PLAYMAKER;PLAYMAKER_1_8
