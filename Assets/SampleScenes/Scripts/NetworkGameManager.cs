@@ -30,7 +30,7 @@ public class NetworkGameManager : NetworkBehaviour
     {
         if (isServer)
         {
-           // StartCoroutine(AsteroidCoroutine());
+            StartCoroutine(AsteroidCoroutine());
         }
 
         for(int i = 0; i < sShips.Count; ++i)
@@ -76,8 +76,8 @@ public class NetworkGameManager : NetworkBehaviour
 
     IEnumerator AsteroidCoroutine()
     {
-        const float MIN_TIME = 5.0f;
-        const float MAX_TIME = 10.0f;
+        const float MIN_TIME = 1.0f;
+        const float MAX_TIME = 5.0f;
 
         while(_spawningAsteroid)
         {
