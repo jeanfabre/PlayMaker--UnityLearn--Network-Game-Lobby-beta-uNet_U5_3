@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.Networking;
-using UnityStandardAssets.Network;
+using Prototype.NetworkLobby;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -76,8 +76,8 @@ public class NetworkGameManager : NetworkBehaviour
 
     IEnumerator AsteroidCoroutine()
     {
-        const float MIN_TIME = 1.0f;
-        const float MAX_TIME = 5.0f;
+        const float MIN_TIME = 5.0f;
+        const float MAX_TIME = 10.0f;
 
         while(_spawningAsteroid)
         {

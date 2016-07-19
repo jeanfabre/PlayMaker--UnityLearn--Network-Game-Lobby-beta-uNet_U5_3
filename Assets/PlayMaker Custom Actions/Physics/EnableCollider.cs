@@ -65,13 +65,13 @@ namespace HutongGames.PlayMaker.Actions
 			var gos = Fsm.GetOwnerDefaultTarget(gameObject);
 			if (gos == null)
 			{
-				Debug.LogWarning("missing gameObject: "+ gos.name);
+				Debug.LogWarning("missing gameObject: "+ gos);
 				return;
 			}
 
 			if (allCollider.Value == false & component == null & colliderSelect == Selection.None)
 			{
-				Debug.LogWarning(gos.name + " !!! Check your setup ");
+				Debug.LogWarning(gos + " !!! Check your setup ");
 				return;
 			}
 

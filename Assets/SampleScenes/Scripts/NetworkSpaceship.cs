@@ -50,11 +50,9 @@ public class NetworkSpaceship : NetworkBehaviour
         _rigidbody = GetComponent<Rigidbody>();
         _collider = GetComponent<Collider>();
 
-
         Renderer[] rends = GetComponentsInChildren<Renderer>();
         foreach (Renderer r in rends)
             r.material.color = color;
-
 
         //We don't want to handle collision on client, so disable collider there
         _collider.enabled = isServer;
@@ -221,7 +219,7 @@ public class NetworkSpaceship : NetworkBehaviour
         killParticle.transform.SetParent(null);
         killParticle.transform.position = transform.position;
         killParticle.gameObject.SetActive(true);
-        killParticle.Stop();
+        killParticle.time = 0;
         killParticle.Play();
 
         if (!_canControl)

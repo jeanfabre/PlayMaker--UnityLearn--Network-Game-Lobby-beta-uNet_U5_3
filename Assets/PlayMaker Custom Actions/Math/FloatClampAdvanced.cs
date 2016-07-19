@@ -46,6 +46,7 @@ namespace HutongGames.PlayMaker.Actions
 		
 		void DoClamp()
 		{
+			
 			floatVariable.Value = Mathf.Clamp(floatVariable.Value, minValue.Value, maxValue.Value);
 		}
 	}
