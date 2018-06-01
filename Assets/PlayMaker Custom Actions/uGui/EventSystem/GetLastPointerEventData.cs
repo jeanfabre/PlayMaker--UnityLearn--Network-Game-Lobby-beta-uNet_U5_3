@@ -1,5 +1,5 @@
 ﻿// (c) Copyright HutongGames, LLC 2010-2015. All rights reserved.
-//--- __ECO__ __ACTION__ ---//
+//--- __ECO__ __PLAYMAKER__ __ACTION__ ---//
 
 using UnityEngine;
 
@@ -25,6 +25,10 @@ namespace HutongGames.PlayMaker.Actions
 
 		[UIHint(UIHint.Variable)]
 		public FsmBool dragging;
+
+		[UIHint(UIHint.Variable)]
+		[ObjectType(typeof(PointerEventData.InputButton))]
+		public FsmEnum inputButton;
 
 		[UIHint(UIHint.Variable)]
 		public FsmBool eligibleForClick;
@@ -80,13 +84,17 @@ namespace HutongGames.PlayMaker.Actions
 		[UIHint(UIHint.Variable)]
 		public FsmVector3 worldPosition;
 
+        [Tooltip("Repeat every frame.")]
+        public bool everyFrame;
 
-		public override void Reset()
+        public override void Reset()
 		{
 			clickCount = null;
 			clickTime = null;
 			delta = null;
 			dragging = null;
+			inputButton = PointerEventData.InputButton.Left;
+
 			eligibleForClick = null;
 			enterEventCamera = null;
 			pressEventCamera = null;
@@ -105,9 +113,25 @@ namespace HutongGames.PlayMaker.Actions
 			useDragThreshold = null;
 			worldNormal = null;
 			worldPosition = null;
-		}
-		
-		public override void OnEnter()
+            everyFrame = false;
+        }
+
+        public override void OnEnter()
+        {
+            OnPointerEvent();
+
+            if (!everyFrame)
+            {
+                Finish();
+            }
+        }
+
+        public override void OnUpdate()
+        {
+            OnPointerEvent();
+        }
+
+            void OnPointerEvent()
 		{
 
 			if (lastPointeEventData==null)
@@ -115,6 +139,7 @@ namespace HutongGames.PlayMaker.Actions
 				Finish();
 				return;
 			}
+
 
 			if (!clickCount.IsNone)
 			{
@@ -134,6 +159,11 @@ namespace HutongGames.PlayMaker.Actions
 			if (!dragging.IsNone)
 			{
 				dragging.Value =  lastPointeEventData.dragging;
+			}
+
+			if (!inputButton.IsNone)
+			{
+				inputButton.Value = (PointerEventData.InputButton)lastPointeEventData.button;
 			}
 
 			if (!eligibleForClick.IsNone)
@@ -225,9 +255,6 @@ namespace HutongGames.PlayMaker.Actions
 			{
 				worldPosition.Value =  lastPointeEventData.pointerCurrentRaycast.worldPosition;
 			}
-
-
-			Finish();
 		}
 	}
 }
