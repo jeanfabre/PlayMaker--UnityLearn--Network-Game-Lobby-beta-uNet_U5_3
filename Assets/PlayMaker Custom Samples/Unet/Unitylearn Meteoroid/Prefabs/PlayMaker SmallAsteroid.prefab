@@ -18,6 +18,7 @@ GameObject:
   - 114: {fileID: 11458738}
   - 114: {fileID: 11493870}
   - 114: {fileID: 11453256}
+  - 114: {fileID: 114000010702121410}
   m_Layer: 0
   m_Name: PlayMaker SmallAsteroid
   m_TagString: Untagged
@@ -47,17 +48,20 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 3c746ddce2130454a86b9a82a1325127, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_SelectedWireframeHidden: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -98,7 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TransformSyncMode: 3
-  m_SendInterval: 0.07692308
+  m_SendInterval: 0
   m_SyncRotationAxis: 7
   m_RotationSyncCompression: 0
   m_SyncSpin: 1
@@ -117,6 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ef65f6eba13947e38c70fda01c6bf3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  synchDirection: 0
   CurrentStatus: 0
   debug: 0
   NetworkChannel: 1
@@ -268,14 +273,15 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
     EnableBreakpoints: 1
-    editorFlags: 1
+    editorFlags: 3
     activeStateName: 
     mouseEvents: 0
+    handleLevelLoaded: 0
     handleTriggerEnter2D: 0
     handleTriggerExit2D: 0
     handleTriggerStay2D: 0
@@ -288,7 +294,10 @@ MonoBehaviour:
     handleCollisionEnter: 1
     handleCollisionExit: 0
     handleCollisionStay: 0
+    handleParticleCollision: 0
     handleControllerColliderHit: 0
+    handleJointBreak: 0
+    handleJointBreak2D: 0
     handleOnGUI: 0
     handleFixedUpdate: 1
     handleApplicationEvents: 0
@@ -395,3 +404,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 153298}
   m_IsPrefabParent: 1
+--- !u!114 &114000010702121410
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267aa37e47d24468f85534f1b6e9ac4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debug: 0
